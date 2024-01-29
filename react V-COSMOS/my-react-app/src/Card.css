@@ -1,0 +1,47 @@
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 200px; /* Set width */
+    margin: 10px; /* Spacing between cards */
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
+  }
+  
+  .sale-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    padding: 5px;
+    border-top-left-radius: 5px; /* Match the card's border-radius */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px; /* Match the card's border-radius */
+    border-top-right-radius: 5px; /* Match the card's border-radius */
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .card-discount {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Add more CSS for additional styling */
+  

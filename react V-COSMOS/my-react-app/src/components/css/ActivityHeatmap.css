@@ -1,0 +1,74 @@
+
+.heatmap-container {
+  font-family: Arial, sans-serif;
+  color: #ddd;
+  background: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.heatmap-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.heatmap-header input[type="number"] {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.heatmap-header button {
+  padding: 5px 10px;
+}
+
+.question {
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.heatmap-container input[type="date"], .heatmap-container input[type="text"] {
+  padding: 5px;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: #ddd;
+  border: 1px solid #767676;
+}
+
+.heatmap {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.month {
+  display: grid;
+  grid-template-columns: repeat(7, 20px);
+  grid-gap: 2px;
+  background: #444;
+  padding: 2px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.day {
+  width: 20px;
+  height: 20px;
+  background-color: #767676;
+  border-radius: 3px;
+  opacity: 0.2;
+}
+
+.day.active {
+  background-color: #4CAF50;
+  opacity: 1;
+}
+
+.day:hover {
+  border: 1px solid #fff;
+}

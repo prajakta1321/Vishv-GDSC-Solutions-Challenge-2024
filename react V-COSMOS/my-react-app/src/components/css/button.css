@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
+.video-header {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-text {
+    position: relative;
+    padding-top: 20%;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.quote-box12 {
+    font-family: 'Noto Serif', serif;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: left;
+    padding: 10px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.quote-box12 p {
+    font-size: 1.2em; 
+    margin: 0; 
+}
+
+.persistent-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 10px; 
+    flex-wrap: wrap; 
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.header-button1 {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(44, 47, 52);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+
+@media (max-width: 992px) {
+    .header-button1 {
+        padding: 8px 16px; 
+        font-size: 1.1em; 
+    }
+
+    .quote-box12 p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .persistent-header {
+        flex-direction: column;
+        padding: 5px; 
+    }
+
+    .header-button1 {
+        padding: 6px 12px;
+        font-size: 1em; 
+    }
+
+    .quote-box12 p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-button1 {
+        padding: 4px 10px; 
+        font-size: 0.9em; 
+    }
+
+    .quote-box12 p {
+        font-size: 0.9em; 
+    }
+}

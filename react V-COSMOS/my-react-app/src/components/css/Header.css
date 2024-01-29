@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
+.video-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-text {
+    position: relative;
+    padding-top: 20%;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    font-family: 'Noto Serif', serif;
+    position: absolute;
+    bottom: -5%; 
+    left: 0;
+    height: 15%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    color: black;
+    text-align: left;
+    border-color: black 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.quote-box12 {
+    font-family: 'Noto Serif', serif;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    color: black;
+    text-align: left;
+    border-color: black 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.quote-box p {
+    color: rgb(55, 60, 66);
+    text-align: justify;
+    font-size: 200%;
+}
+
+.quote-box12 p {
+    color: rgb(55, 60, 66);
+    text-align: justify;
+    font-size: 150%;
+}
+
+.header-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.header-button {
+
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.header-button2 {
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.scrolled {
+    background: rgba(0, 0, 0, 0.7); 
+    transition: background 0.3s ease-in-out;
+}
+
+
+.scrolled .header-buttons {
+    background-color: #0056b3; 
+}
+
+.persistent-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: top 0.3s;
+}

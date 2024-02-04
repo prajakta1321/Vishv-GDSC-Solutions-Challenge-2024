@@ -10,11 +10,12 @@ import Latest from './pages/Latest';
 import LoginSign from './pages/login_signin';
 import Contribution from './pages/Contribution' ; 
 import MyGlobe from './components/MyGlobe'; 
-
+import { ColorProvider } from './ColorContext';
 
 function App() {
   return (
     <Router>
+      <ColorProvider>
       <div className="App">
         
         <Routes>
@@ -44,6 +45,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      </ColorProvider>
     </Router>
   );
 }

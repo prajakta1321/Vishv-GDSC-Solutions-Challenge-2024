@@ -1,4 +1,3 @@
-
 .heatmap-container {
   font-family: Arial, sans-serif;
   color: #ddd;
@@ -26,6 +25,27 @@
   padding: 5px 10px;
 }
 
+.year-change-buttons { /* Added styles for the year change buttons container */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.year-change-buttons button { /* Added styles for the buttons */
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.year-change-buttons button:hover { /* Style for hover state */
+  background-color: #367c39;
+}
+
 .question {
   color: #ddd;
   margin-bottom: 10px;
@@ -46,9 +66,10 @@
   gap: 10px;
 }
 
+
 .month {
   display: grid;
-  grid-template-columns: repeat(7, 20px);
+  grid-template-columns: repeat(7, 15px); /* Reduced size of the grid columns */
   grid-gap: 2px;
   background: #444;
   padding: 2px;
@@ -57,8 +78,8 @@
 }
 
 .day {
-  width: 20px;
-  height: 20px;
+  width: 15px; /* Reduced width */
+  height: 15px; /* Reduced height */
   background-color: #767676;
   border-radius: 3px;
   opacity: 0.2;

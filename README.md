@@ -18,3 +18,4 @@ REACT, DJANGO
 
 Minor Tools :
 Google Colaboratory, Firebase 
+

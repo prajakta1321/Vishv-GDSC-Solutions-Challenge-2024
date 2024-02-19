@@ -2,32 +2,35 @@ HOW CAN WE MAKE A MORE RESILIENT PLANET ?
 
 UN SDGs:
 
-Major Goals :
+🎯 Major Goals :
 
-Climate Action,
-Quality Education
+✔ Climate Action,
 
-Minor Goals:
+✔ Quality Education
 
-Life on land,
-Life Below Water,
-Affordable and clean Energy
+🎯 Minor Goals:
 
-Major Tools :
+✔ Life on land,
 
-GOOGLE CLOUD PLATFORM (Vertex AI ,AUTOML AND SQL),
+✔ Life Below Water,
 
-GOOGLE MAPS API AND GOOGLE EARTH ENGINE,
+✔ Affordable and clean Energy
 
-GOOGLE MAIL FOR OAUTH 2.0
+✅ Major Tools  : 
 
-VISUAL STUDIO CODE, REACT, DJANGO 
+✔ GOOGLE CLOUD PLATFORM (Vertex AI ,AUTOML AND SQL),
 
-DEPLOYMENT : 
+✔ GOOGLE MAPS API AND GOOGLE EARTH ENGINE,
 
-Google App Engine 
+✔ GOOGLE MAIL FOR OAUTH 2.0
 
-Minor Tools :
+✔ VISUAL STUDIO CODE, REACT, DJANGO 
 
-Google Colaboratory, Firebase 
+✅ DEPLOYMENT : 
+
+✔Google App Engine 
+
+✅ Minor Tools :
+
+✔ Google Colaboratory, Firebase 
 

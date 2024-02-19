@@ -14,7 +14,10 @@ Affordable and clean Energy
 Major Tools :
 GOOGLE CLOUD PLATFORM (Vertex AI ,AUTOML AND SQL),
 GOOGLE MAPS API AND GOOGLE EARTH ENGINE,
-REACT, DJANGO 
+GOOGLE MAIL FOR OAUTH 2.0
+VISUAL STUDIO CODE, REACT, DJANGO 
+
+deployment : Google App Engine 
 
 Minor Tools :
 Google Colaboratory, Firebase 

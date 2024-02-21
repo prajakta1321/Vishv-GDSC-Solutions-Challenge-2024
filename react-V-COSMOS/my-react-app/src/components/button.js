@@ -1,9 +1,8 @@
 import React from 'react';
 import './css/Header.css';
-import { useColor } from '../ColorContext'; // Import the useColor hook
+import { useColor } from '../ColorContext'; 
 
 const Header = () => {
-    // Use the useColor hook to access colorPerspective and handleColorPerspectiveChange
     const { colorPerspective, handleColorPerspectiveChange } = useColor();
 
     return (
@@ -15,7 +14,7 @@ const Header = () => {
                 <select
                     className="color-dropdown"
                     value={colorPerspective}
-                    onChange={(e) => handleColorPerspectiveChange(e.target.value)} // Call the context function
+                    onChange={(e) => handleColorPerspectiveChange(e.target.value)} 
                     aria-label="Color Perspective"
                 >
                     <option value="default" disabled>Color Perspective</option>

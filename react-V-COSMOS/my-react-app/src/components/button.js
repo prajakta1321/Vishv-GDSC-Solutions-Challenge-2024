@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className="persistent-header">
             <div className="quote-box12">
-                <p><a href="/">How Can We Create A More Resilient Planet ?</a></p>
+                <p><a href="/" className='UpperHeaderTExt'>How Can We Create A More Resilient Planet ?</a></p>
             </div>
             <div className="header-buttons">
                 <select

@@ -1,57 +1,65 @@
-import React from 'react';
-import './css/SplitScreenComponent.css'; // Importing the CSS file
+import React, { useState, useEffect } from 'react';
+import './css/SplitScreenComponent.css'; // Make sure the path matches your file structure
 import leafs from './img/whitemount.jpg';
-import paint_hand from './img/paint-hand.jpg'
-import windmill from './img/windmill.jpg'
-import hrg from './img/hourglass.jpg'
+import paint_hand from './img/paint-hand.jpg';
+import windmill from './img/windmill.jpg';
+import hrg from './img/hourglass.jpg';
+import { translateText } from './api/translate'; // Adjust the import path as necessary
+import { useLanguage } from '../contexts/LanguageContext';
+
 const SplitScreenComponent = () => {
+  const { language } = useLanguage(); // Use the current language state
+  const [translatedTexts, setTranslatedTexts] = useState([]);
+
+  useEffect(() => {
+    const texts = [
+      'We are dedicated and responsible individuals committed to observe the environmental changes and passionate about its impact all over the planet.',
+      'Our goal is to deliver insights to alterations happening in the ecosystem and make individuals realize the significance of the Habitat and earthly life forms.',
+      'At Vishv, we bring together the diverse factors affecting the Ecosystem related to the Locale from climate, temperature, energy, aquatic life, oceanic changes, Biota on land as well as flora and fauna of the earth.',
+      'We also encourage individuals to trail their own contribution through various activities and realise them on their significance to the Realm. Various Learning Content as well as updates on current changes in the ecosystem are encouraged.'
+    ];
+
+    Promise.all(texts.map(text => translateText(text, language))) // Use the language state
+      .then(translated => setTranslatedTexts(translated));
+  }, [language]); // Re-run the effect when language changes
+  
   return (
     <div>
       <div className="container full-width-video">
         <div className="video-container">
-        <img src={leafs} alt='img' ondragstart="return false;"></img>
-          <div className="text-overlay"  >
-          <p>We are dedicated and responsible individuals committed to observe the environmental changes and passionate about its impact all over the planet.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="container full-width-video">
-        <div className="video-container">
-        <img src={paint_hand} alt='img' ondragstart="return false;"></img>
+          <img src={leafs} alt="Environmental Changes" draggable="false" />
           <div className="text-overlay">
-          <p>Our goal is to deliver insights to alterations happening in the ecosystem and make individuals
-realize the significance of the Habitat and earthly life forms.</p>
-          </div>
-        </div>
-      </div>
-      <div className="container full-width-video">
-        <div className="video-container">
-        <img src={windmill} alt='img' ondragstart="return false;"></img>
-          <div className="text-overlay">
-          <p>At (website name ), we bring  together the diverse factors affecting the Ecosystem related
-to the Locale from climate, temperature, energy, aquatic life, oceanic changes, Biota on land  
-as well as flora and fauna of the earth.
-</p>
+            <p>{translatedTexts[0]}</p>
           </div>
         </div>
       </div>
 
       <div className="container full-width-video">
         <div className="video-container">
-        <img src={hrg} alt='img' ondragstart="return false;"></img>
+          <img src={paint_hand} alt="Ecosystem Insights" draggable="false" />
           <div className="text-overlay">
-          <p>We also encourage individuals to trail their own contribution through various activities and
-realise them on their significance to the Realm.
-
-Various Learning Content as well as updates on current changes in the ecosystem are encouraged.
-</p>
+            <p>{translatedTexts[1]}</p>
           </div>
         </div>
       </div>
 
-      
+      <div className="container full-width-video">
+        <div className="video-container">
+          <img src={windmill} alt="Ecosystem Diversity" draggable="false" />
+          <div className="text-overlay">
+            <p>{translatedTexts[2]}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="container full-width-video">
+        <div className="video-container">
+          <img src={hrg} alt="Individual Contribution" draggable="false" />
+          <div className="text-overlay">
+            <p>{translatedTexts[3]}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

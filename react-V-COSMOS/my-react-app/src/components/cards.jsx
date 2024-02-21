@@ -19,13 +19,9 @@ const users = [
   {
     name: 'Your Contribution',
     image: img4,
-    link: '/contribution'
-  },
-  {
-    name: 'Login',
-    image: img2,
     link: '/login'
   },
+
 
   // ... more users
 ];

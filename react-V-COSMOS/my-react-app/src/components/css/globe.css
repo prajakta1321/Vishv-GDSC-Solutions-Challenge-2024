@@ -37,3 +37,38 @@
 .zoom-india-button:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
+
+.other-components .dropdown {
+  padding: 0.5em 1em;
+  margin-bottom: 1em; /* Space between the dropdowns */
+  border-radius: 0.3em;
+  border: 1px solid #ddd; /* Subtle border */
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  font-size: 1rem; /* Responsive font size */
+  transition: all 0.3s; /* Smooth transition for all properties */
+}
+
+.other-components .dropdown:hover {
+  border-color: #aaa; /* Darker border on hover for better visibility */
+}
+
+/* Style for the explore button within the .other-components class */
+.other-components .explore-button {
+  padding: 0.5em 1em;
+  margin-top: 1em; /* Space above the button */
+  font-size: 1rem; /* Responsive font size */
+  cursor: pointer;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 0.3em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.other-components .explore-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lifted" effect */
+}

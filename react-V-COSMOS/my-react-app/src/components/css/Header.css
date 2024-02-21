@@ -13,7 +13,10 @@
     align-items: center;
     justify-content: center; 
 }
-
+.upperHeaderText{
+    text-decoration: none;
+    
+}
 .video-background {
     position: absolute;
     width: 100%;
@@ -72,6 +75,11 @@
     border-color: black 5px;
     padding-left: 20px;
     padding-right: 20px;
+    text-decoration: none;
+}
+.quote-box12 a{
+    text-decoration: none;
+    color: #000;
 }
 
 .quote-box p {
@@ -84,6 +92,8 @@
     color: rgb(55, 60, 66);
     text-align: justify;
     font-size: 150%;
+    text-decoration: none;
+    
 }
 
 .header-buttons {

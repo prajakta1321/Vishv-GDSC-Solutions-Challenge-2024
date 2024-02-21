@@ -52,6 +52,7 @@ const UpperText = () => {
   return (
     <>
     <div className="welcome-container">
+      <h1>My Eco Trail</h1>
     <h2>Your daily contribution towards a more resilient planet!</h2>
       <p>
         "Track your daily eco-footprint, monitor monthly progress, 

@@ -2,19 +2,46 @@ import React, { useState, useEffect } from 'react';
 import './css/Header.css';
 import headerVideo from './vid/vid2.mp4';
 import { useColor } from '../ColorContext'; // Ensure the path matches your project structure
+import LanguageSwitchButton from './LanguageSwitchButton';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translateText } from './api/translate';
 
 const Header = () => {
-    const threshold = document.documentElement.scrollHeight * 0.12;
     const [showPersistentHeader, setShowPersistentHeader] = useState(false);
     const { colorPerspective, handleColorPerspectiveChange } = useColor(); // Use context
+    const { language } = useLanguage(); // Destructure to get current language
+    const [translatedTexts, setTranslatedTexts] = useState({
+        headerText: '',
+        quoteText: ''
+    });
 
     useEffect(() => {
+        // Function to translate texts
+        const translateAllTexts = async () => {
+            const headerTranslation = await translateText('Vishv', language);
+            const quoteTranslation = await translateText('How Can We Create A More Resilient Planet ?', language);
+            setTranslatedTexts({
+                headerText: headerTranslation,
+                quoteText: quoteTranslation
+            });
+        };
+
+        translateAllTexts();
+    }, [language]);
+
+    useEffect(() => {
+        // Function to handle scroll, moved inside useEffect
         const onScroll = () => {
+            const threshold = document.documentElement.scrollHeight * 0.12;
             setShowPersistentHeader(window.scrollY > threshold);
         };
+
+        // Setup scroll event listener
         window.addEventListener('scroll', onScroll);
+        
+        // Cleanup function to remove the event listener
         return () => window.removeEventListener('scroll', onScroll);
-    }, []);
+    }, []); // Removed language as a dependency to avoid re-adding the event listener on language changes. Add other dependencies as needed.
 
     // Handle the change in color perspective
     const handleChangeColorPerspective = (newValue) => {
@@ -34,7 +61,7 @@ const Header = () => {
         <>
             {showPersistentHeader && (
                 <div className={`persistent-header ${colorPerspectiveClass}`}>
-                    <div className="quote-box12"><p>How Can We Create A More Resilient Planet ?</p></div>
+                    <div className="quote-box12"><p>{translatedTexts.quoteText}</p></div>
                     <div className="header-buttons">
                         <select
                             className="color-dropdown"
@@ -48,19 +75,18 @@ const Header = () => {
                             <option value="anomalous-trichromatism">Trichromatism</option>
                             <option value="no-color-blindness">No, I am not color blind</option>
                         </select>
-                        <button className="header-button">Language</button>
+                        <LanguageSwitchButton/>
                     </div>
                 </div>
             )}
             <header className="video-header">
                 <video autoPlay loop muted className="video-background">
                     <source src={headerVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
                 </video>
                 <div className="header-overlay">
-                    <div className="video-text">V:Cosmos</div>
+                    <div className="video-text"><p>{translatedTexts.headerText}</p></div>
                     <div className="quote-box">
-                        <p>How Can We Create A More Resilient Planet ?</p>
+                        <p>{translatedTexts.quoteText}</p>
                     </div>
                 </div>
                 <div className="header-buttons">
@@ -76,7 +102,7 @@ const Header = () => {
                         <option value="anomalous-trichromatism">Trichromatism</option>
                         <option value="no-color-blindness">No, I am not color blind</option>
                     </select>
-                    <button className="header-button2">Language</button>
+                    <LanguageSwitchButton/>
                 </div>
                 
             </header>

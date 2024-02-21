@@ -28,7 +28,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-copy">
-        © 2024 Climatescope. <a href="#license">Terms of Use</a>
+        © 2024 Vishv. <a href="#license">Terms of Use</a>
       </div>
     </footer>
   );

@@ -6,12 +6,12 @@ import json
 import logging
 
 logger = logging.getLogger(__name__)
-@csrf_exempt  # Disable CSRF token for simplicity, consider security implications
+@csrf_exempt  
 def translate_text(request):
     if request.method == "POST":
         try:
             print(request.body)
-            data = json.loads(request.body)  # Parse JSON data from request body
+            data = json.loads(request.body)  
             text_to_translate = data.get('text', '')
             dest_language = data.get('lang', 'en')
             translator = Translator()

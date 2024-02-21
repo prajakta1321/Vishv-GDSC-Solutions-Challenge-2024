@@ -1,7 +1,12 @@
-How to use the code : 
-1. Clone the Repository using:
+## How to Use the Code
 
- `git clone https://github.com/prajakta1321/Vishv-GDSC-Solutions-Challenge-2024.git` 
+### 1. Clone the Repository
+
+First, clone the repository to your local machine using the command below:
+
+```bash
+git clone https://github.com/prajakta1321/Vishv-GDSC-Solutions-Challenge-2024.git
+
  
 2. Starting up the Frontend:
 
@@ -33,34 +38,34 @@ b. Start the Django Server:
 
 #### 🎯 Major Goals:
 
-- ✔ Climate Action,
-- ✔ Quality Education
+ ✔ Climate Action,
+ ✔ Quality Education
 
 #### 🎯 Minor Goals:
 
-- ✔ Life on land,
-- ✔ Life Below Water,
-- ✔ Affordable and clean Energy
+ ✔ Life on land,
+ ✔ Life Below Water,
+ ✔ Affordable and clean Energy
 
 ### ✅ Major Tools:
 
-- ✔ GOOGLE CLOUD PLATFORM (Vertex AI, AUTOML AND SQL),
-- ✔ GOOGLE MAPS API AND GOOGLE EARTH ENGINE,
-- ✔ GOOGLE MAIL FOR OAUTH 2.0
-- ✔ VISUAL STUDIO CODE
+ ✔ GOOGLE CLOUD PLATFORM (Vertex AI, AUTOML AND SQL),
+ ✔ GOOGLE MAPS API AND GOOGLE EARTH ENGINE,
+ ✔ GOOGLE MAIL FOR OAUTH 2.0
+ ✔ VISUAL STUDIO CODE
 
 ### ✅ Frameworks:
 
-- ✔ REACT
-- ✔ DJANGO
+ ✔ REACT
+ ✔ DJANGO
 
 ### ✅ DEPLOYMENT:
 
-- ✔ Google App Engine
-- ✔ Firebase
+ ✔ Google App Engine
+ ✔ Firebase
 
 ### ✅ Minor Tools:
 
-- ✔ Google Colaboratory
+ ✔ Google Colaboratory
 
 

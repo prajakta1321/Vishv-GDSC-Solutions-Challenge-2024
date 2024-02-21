@@ -6,28 +6,30 @@ First, clone the repository to your local machine using the command below:
 
 ```bash
 git clone https://github.com/prajakta1321/Vishv-GDSC-Solutions-Challenge-2024.git
-
+```
  
 2. Starting up the Frontend:
 
 a. Change Directory:
 
+```bash
 `cd react-V-COSMOS/my-react-app`
-
+```
 b. Start the React app:
 
+```bash
 `npm start`
-
+```
 3. Starting up the Backend:
 
 a. Change Directory:
-
+```bash
 `cd Django-Backend`
-
+```
 b. Start the Django Server:
-
+```bash
 `python manage.py runserver`
-
+```
 
 
 [App Deployed on Firebase](https://vishv.web.app/)

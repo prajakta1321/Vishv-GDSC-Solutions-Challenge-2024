@@ -31,6 +31,7 @@ b. Start the Django Server:
 `python manage.py runserver`
 ```
 
+_The API keys are redacted for security_
 
 [App Deployed on Firebase](https://vishv.web.app/)
 

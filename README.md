@@ -27,48 +27,40 @@ b. Start the Django Server:
 
 [App Deployed on Firebase](https://vishv.web.app/)
 
+## HOW CAN WE MAKE A MORE RESILIENT PLANET? ♻
 
-HOW CAN WE MAKE A MORE RESILIENT PLANET ? ♻
+### UN SDGs:
 
-UN SDGs:
+#### 🎯 Major Goals:
 
-🎯 Major Goals :
+- ✔ Climate Action,
+- ✔ Quality Education
 
-✔ Climate Action,
+#### 🎯 Minor Goals:
 
-✔ Quality Education
+- ✔ Life on land,
+- ✔ Life Below Water,
+- ✔ Affordable and clean Energy
 
-🎯 Minor Goals:
+### ✅ Major Tools:
 
-✔ Life on land,
+- ✔ GOOGLE CLOUD PLATFORM (Vertex AI, AUTOML AND SQL),
+- ✔ GOOGLE MAPS API AND GOOGLE EARTH ENGINE,
+- ✔ GOOGLE MAIL FOR OAUTH 2.0
+- ✔ VISUAL STUDIO CODE
 
-✔ Life Below Water,
+### ✅ Frameworks:
 
-✔ Affordable and clean Energy
+- ✔ REACT
+- ✔ DJANGO
 
-✅ Major Tools  : 
+### ✅ DEPLOYMENT:
 
-✔ GOOGLE CLOUD PLATFORM (Vertex AI ,AUTOML AND SQL),
+- ✔ Google App Engine
+- ✔ Firebase
 
-✔ GOOGLE MAPS API AND GOOGLE EARTH ENGINE,
+### ✅ Minor Tools:
 
-✔ GOOGLE MAIL FOR OAUTH 2.0
+- ✔ Google Colaboratory
 
-✔ VISUAL STUDIO CODE
-
-✅Framewworks :
-
-✔ REACT
-✔ DJANGO 
-
-
-✅ DEPLOYMENT : 
-
-✔Google App Engine 
-
-✔Firebase
-
-✅ Minor Tools :
-
-✔ Google Colaboratory 
 

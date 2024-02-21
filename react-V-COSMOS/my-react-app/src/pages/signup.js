@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/SignUp.css'; // Import your CSS here
+import './css/SignUp.css'; 
 
 
 const SignUp = () => {
@@ -34,7 +34,6 @@ const SignUp = () => {
         <div className="form-group">
           <select>
             <option value="">Select Country</option>
-            {/* Populate countries */}
           </select>
         </div>
 
@@ -45,7 +44,6 @@ const SignUp = () => {
         <div className="form-group">
           <select>
             <option value="">Select Gender</option>
-            {/* Gender options */}
           </select>
         </div>
 

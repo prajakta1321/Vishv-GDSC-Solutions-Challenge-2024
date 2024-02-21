@@ -152,7 +152,6 @@ const UpperText = () => {
 
 
 
-      {/* Tracked actions display */}
     </div>
     </>
   );

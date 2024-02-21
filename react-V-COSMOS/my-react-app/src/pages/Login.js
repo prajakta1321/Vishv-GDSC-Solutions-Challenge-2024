@@ -1,4 +1,4 @@
-/* global google */
+
 import React, { useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -10,15 +10,14 @@ const Login = () => {
   const { setUserData } = useAuth();
 
   useEffect(() => {
-    /* global google */
     google.accounts.id.initialize({
-      client_id: "32910638559-8teoppeidkjljls7q29bd2e38sruuj75.apps.googleusercontent.com",
+      client_id: "redact.apps.googleusercontent.com",
       callback: handleCredentialResponse
     });
 
     google.accounts.id.renderButton(
       document.getElementById("signInDiv"),
-      { theme: "outline", size: "large" }  // customization attributes
+      { theme: "outline", size: "large" } 
     );
   }, []);
 

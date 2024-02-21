@@ -1,6 +1,6 @@
 import React from 'react';
 import FullScreenImage from '../components/FullScreenImage';
-import Button from '../components/button'; // Your header component
+import Button from '../components/button'; 
 import leafs from './img/leafs.jpg' ; 
 import Card1 from '../components/cards1';
 import lower from './img/lower-img.jpg'
@@ -8,7 +8,7 @@ import './css/Insights.css';
 const Latest = () => {
   return (
     <>
-      <Button /> {/* Header */}
+      <Button />
       
       <FullScreenImage 
         imageUrl= {leafs} 

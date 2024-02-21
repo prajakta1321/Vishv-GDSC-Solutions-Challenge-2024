@@ -1,9 +1,9 @@
 import React from 'react';
-import './css/Latest.css'; // Import the CSS file
+import './css/Latest.css'; 
 import img1 from './img/latest1.jpg'
 import img2 from './img/latest4.jpg'
 import img3 from './img/latest6.jpg'
-import Button from '../components/button'; // Your header component
+import Button from '../components/button'; 
 import CarouselCard from '../components/CarouselCard';
 
 const Insights = () => {
@@ -27,7 +27,7 @@ const Insights = () => {
             <CarouselCard sectionName="Section 1" location="Location 1" />
             <CarouselCard sectionName="Section 2" location="Location 2" />
             <CarouselCard sectionName="Section 3" location="Location 3" />
-            {/* Add more CarouselCard components as needed */}
+
           </div>
           <div className='btn-ctn'>
             <button>Post</button>

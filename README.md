@@ -1,3 +1,7 @@
+How to use the code : 
+
+
+
 HOW CAN WE MAKE A MORE RESILIENT PLANET ? ♻
 
 UN SDGs:
@@ -24,13 +28,21 @@ UN SDGs:
 
 ✔ GOOGLE MAIL FOR OAUTH 2.0
 
-✔ VISUAL STUDIO CODE, REACT, DJANGO 
+✔ VISUAL STUDIO CODE
+
+✅Framewworks :
+
+✔ REACT
+✔ DJANGO 
+
 
 ✅ DEPLOYMENT : 
 
 ✔Google App Engine 
 
+✔Firebase
+
 ✅ Minor Tools :
 
-✔ Google Colaboratory, Firebase 
+✔ Google Colaboratory 
 

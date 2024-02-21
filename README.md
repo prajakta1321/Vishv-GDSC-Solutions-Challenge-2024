@@ -24,9 +24,8 @@ b. Start the Django Server:
 `python manage.py runserver`
 
 
-Link of the Deployed App:
 
-[App Deployed on Firebase]([https://www.openai.com](https://vishv.web.app/))
+[App Deployed on Firebase](https://vishv.web.app/)
 
 
 HOW CAN WE MAKE A MORE RESILIENT PLANET ? ♻

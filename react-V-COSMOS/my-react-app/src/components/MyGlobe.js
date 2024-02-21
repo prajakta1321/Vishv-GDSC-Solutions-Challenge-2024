@@ -138,7 +138,7 @@ const MyGlobe = () => {
 
       const script = document.createElement('script');
       script.id = scriptId;
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCISFRnQRk-SNhVv-0CUVh25MaY0jYLlsU&callback=initMap`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=redacted&callback=initMap`;
       script.async = true;
       script.defer = true;
       script.onerror = () => console.error('Google Maps script failed to load.');

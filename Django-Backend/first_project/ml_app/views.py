@@ -65,7 +65,7 @@ def google_auth(request):
 
         try:
             # Specify the CLIENT_ID of the app that accesses the backend:
-            idinfo = id_token.verify_oauth2_token(token, google_requests.Request(), "32910638559-8teoppeidkjljls7q29bd2e38sruuj75.apps.googleusercontent.com")
+            idinfo = id_token.verify_oauth2_token(token, google_requests.Request(), "redacted")
 
             if idinfo['iss'] not in ['accounts.google.com', 'https://accounts.google.com']:
                 raise ValueError('Wrong issuer.')

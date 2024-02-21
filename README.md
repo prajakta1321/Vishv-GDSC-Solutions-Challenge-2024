@@ -4,7 +4,7 @@
 
 First, clone the repository to your local machine using the command below:
 
-```bash
+```git
 git clone https://github.com/prajakta1321/Vishv-GDSC-Solutions-Challenge-2024.git
 ```
  

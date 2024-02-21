@@ -88,7 +88,7 @@ const Card1 = () => {
   return (
     <div className="card-container">
       {users.map((user, index) => (
-        <a href={user.link} className="card" key={index}> {/* Use Link component if using React Router */}
+        <a href={user.link} className="card" key={index}> 
           <img className="card-image" src={user.image} alt={user.name} />
           <div className="card-info">
             <h3 className="card-name">{user.name}</h3>

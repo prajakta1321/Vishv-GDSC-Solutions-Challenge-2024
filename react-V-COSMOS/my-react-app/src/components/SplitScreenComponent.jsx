@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import './css/SplitScreenComponent.css'; // Make sure the path matches your file structure
+import './css/SplitScreenComponent.css'; 
 import leafs from './img/whitemount.jpg';
 import paint_hand from './img/paint-hand.jpg';
 import windmill from './img/windmill.jpg';
 import hrg from './img/hourglass.jpg';
-import { translateText } from './api/translate'; // Adjust the import path as necessary
+import { translateText } from './api/translate'; 
 import { useLanguage } from '../contexts/LanguageContext';
 
 const SplitScreenComponent = () => {
-  const { language } = useLanguage(); // Use the current language state
+  const { language } = useLanguage(); 
   const [translatedTexts, setTranslatedTexts] = useState([]);
 
   useEffect(() => {
@@ -19,9 +19,9 @@ const SplitScreenComponent = () => {
       'We also encourage individuals to trail their own contribution through various activities and realise them on their significance to the Realm. Various Learning Content as well as updates on current changes in the ecosystem are encouraged.'
     ];
 
-    Promise.all(texts.map(text => translateText(text, language))) // Use the language state
+    Promise.all(texts.map(text => translateText(text, language))) 
       .then(translated => setTranslatedTexts(translated));
-  }, [language]); // Re-run the effect when language changes
+  }, [language]); 
   
   return (
     <div>

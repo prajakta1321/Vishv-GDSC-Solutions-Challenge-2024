@@ -1,14 +1,11 @@
-// CarouselCard.js
 import React from 'react';
-import './css/CarouselCard.css'; // Assuming you have a separate CSS file for CarouselCard
+import './css/CarouselCard.css'; 
 
 const CarouselCard = ({ sectionName, location }) => {
   return (
     <div className="carousel-card">
       <div className="media-section">
-        {/* Upload Button */}
         <button className="upload-button">Upload Image/Video</button>
-
         <div className="media-info">
           <p>{sectionName}</p>
           <p>{location}</p>

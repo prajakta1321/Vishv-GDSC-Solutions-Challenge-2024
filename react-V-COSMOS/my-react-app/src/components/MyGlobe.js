@@ -1,21 +1,20 @@
 /* global google */
 import './css/globe.css'
 import React, { useEffect,useState } from 'react';
-import { translateText } from './api/translate'; // Adjust the import path as necessary
+import { translateText } from './api/translate';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const continents = {
   'Asia': ['India', 'China', 'Japan'],
   'Europe': ['Germany', 'France', 'Italy'],
-  // ... other continents
 };
 
 const continentCoords = {
   'Asia': { lat: 34.0479, lng: 100.6197, zoom: 3 },
   'Europe': { lat: 54.5260, lng: 15.2551, zoom: 4 },
-  // ... coordinates for other continents
+
 };
-// Ensure initMap is available globally
+
 window.initMap = function() {
   setTimeout(() => {
     const mapElement = document.getElementById('map');
@@ -24,14 +23,13 @@ window.initMap = function() {
       return;
     }
 
-    // Initialize the map and store it on window for global access
     const map = new google.maps.Map(mapElement, {
       zoom: 2,
       center: { lat: 0, lng: 0 },
       mapTypeId: 'satellite',
     });
 
-    // Assign the map object to window for access from other functions
+
     window.myMap = map;
   }, 100);
 };
@@ -42,22 +40,22 @@ const MyGlobe = () => {
       return null;
     }
   
-    const maxPM25Value = 300; // Maximum value for PM2.5 scale
-    const angleRange = 180; // Speedometer covers 180 degrees
+    const maxPM25Value = 300; 
+    const angleRange = 180;
     const valueRatio = PM25Value / maxPM25Value;
-    const needleAngle = angleRange * valueRatio - 90; // Offset by 90 degrees for the correct start position
+    const needleAngle = angleRange * valueRatio - 90; 
   
-    // Calculate needle end position using simple trigonometry
-    const radius = 40; // Radius of the circle part of the speedometer
+
+    const radius = 40; 
     const svgWidth = 200;
     const svgHeight = 110;
-    const needleLength = 55; // Length of the needle from center to end
+    const needleLength = 55; 
   
-    // Center point of the semi-circle
+
     const centerX = svgWidth / 2;
     const centerY = svgHeight - 30;
   
-    // End point of the needle
+
     const endX = centerX + needleLength * Math.cos(Math.PI * needleAngle / 180);
     const endY = centerY + needleLength * Math.sin(Math.PI * needleAngle / 180);
   
@@ -65,9 +63,7 @@ const MyGlobe = () => {
       <svg width={svgWidth} height={svgHeight}>
         <circle cx={centerX} cy={centerY} r={radius} fill="none" stroke="black" strokeWidth="2" />
         <line x1={centerX} y1={centerY} x2={endX} y2={endY} stroke="red" strokeWidth="2" />
-        {/* Center circle for the needle */}
         <circle cx={centerX} cy={centerY} r="3" fill="red" />
-        {/* Optionally, add more elements like labels or ticks */}
       </svg>
     );
   };
@@ -76,12 +72,12 @@ const MyGlobe = () => {
   const [selectedContinent, setSelectedContinent] = useState('');
   const [selectedCountry, setSelectedCountry] = useState('');
   const [PM25Value, setPM25Value] = useState(null);
-  const { language } = useLanguage(); // Use the current language state
+  const { language } = useLanguage(); 
   const [translatedTexts, setTranslatedTexts] = useState([]);
 
   const currentDate = new Date();
   const year = currentDate.getFullYear();
-  const month = currentDate.getMonth() + 1; // getMonth() is zero-indexed
+  const month = currentDate.getMonth() + 1; 
   const day = currentDate.getDate();
   const renderPM25Value = () => {
     const PM25Value1 = Number(PM25Value).toFixed(2);
@@ -121,7 +117,7 @@ const MyGlobe = () => {
       
 
     ];
-    Promise.all(texts.map(text => translateText(text, language))) // Use the language state
+    Promise.all(texts.map(text => translateText(text, language)))
     .then(translated => setTranslatedTexts(translated));
     
     const scriptId = 'google-maps-script';
@@ -147,10 +143,10 @@ const MyGlobe = () => {
 
     loadGoogleMapsScript();
 
-    // No specific cleanup is defined here, but consider removing event listeners or global variables if not needed anymore
+    
   }, [language]);
 
-  // Define the function to zoom into India
+
   const exploreLocation = () => {
     const countryCoords = {
       'India': { lat: 20.5937, lng: 78.9629, zoom: 5 },
@@ -164,7 +160,7 @@ const MyGlobe = () => {
       window.myMap.setCenter({ lat, lng });
       window.myMap.setZoom(zoom);
   
-      // Use the current date for the request
+  
       const data = {
         YEAR: year,
         MONTH: month,
@@ -172,7 +168,6 @@ const MyGlobe = () => {
         CATEGORY: selectedCountry.toLowerCase(),
       };
   
-      // Send the POST request
       fetch('https://coral-smoke-411614.uc.r.appspot.com/predict/', {
         method: 'POST',
         headers: {
@@ -196,8 +191,8 @@ const MyGlobe = () => {
     'North America': [],
     'South America': [],
     'Africa': [],
-    'Australia': [], // Australia is both a country and a continent
-    'Antarctica': [] // No countries, Antarctica is not divided into countries
+    'Australia': [], 
+    'Antarctica': [] 
   };
   
   const continentCoords = {
@@ -207,14 +202,14 @@ const MyGlobe = () => {
     'South America': { lat: -8.7832, lng: -55.4915, zoom: 3 },
     'Africa': { lat: 1.6508, lng: 27.6662, zoom: 3 },
     'Australia': { lat: -25.2744, lng: 133.7751, zoom: 3 },
-    'Antarctica': { lat: -82.8628, lng: 135.0000, zoom: 3 } // Coordinates are approximate
+    'Antarctica': { lat: -82.8628, lng: 135.0000, zoom: 3 } 
   };
   
 
   const handleContinentChange = (event) => {
     const continent = event.target.value;
     setSelectedContinent(continent);
-    setSelectedCountry(''); // Reset country selection when continent changes
+    setSelectedCountry(''); 
 
     if (continent && continentCoords[continent]) {
       const { lat, lng, zoom } = continentCoords[continent];

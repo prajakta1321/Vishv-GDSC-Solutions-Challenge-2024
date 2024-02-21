@@ -15,7 +15,6 @@ const LanguageSwitchButton = () => {
         <option value="fr">Français (French)</option>
         <option value="de">Deutsch (German)</option>
         <option value="hi">हिन्दी (Hindi)</option>
-        {/* Add more languages as needed */}
       </select>
     );
   };

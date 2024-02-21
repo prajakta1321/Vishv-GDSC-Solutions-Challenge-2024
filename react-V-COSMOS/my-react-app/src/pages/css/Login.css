@@ -1,13 +1,13 @@
-/* Outer container with image background */
+
 .outer-container {
-    background-image: url('../img/galaxy.jpg'); /* Replace with your image path */
+    background-image: url('../img/galaxy.jpg'); 
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Ensure the container is at least as tall as the viewport */
+    min-height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Add padding to the outer container */
+    padding: 20px; 
   }
   
   .form-container {
@@ -15,53 +15,53 @@
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    width: 100%; /* Make the inner container full width */
+    width: 100%;
     padding: 20px;
   }
   select{
     width: 87%;
-    padding: 12px 15px; /* Adjust padding as needed */
+    padding: 12px 15px; 
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8; /* Light gray background */
+    background-color: #f8f8f8;
     transition: border-color 0.3s, background-color 0.3s;
   }
   
-  /* Input fields styling */
+
   input[type="text"],
   input[type="email"],
   input[type="password"],
   input[type="tel"],
   input[type="date"],
   input[type="file"] {
-    width: 80%; /* Full width within the container */
-    padding: 12px 15px; /* Adjust padding as needed */
+    width: 80%; 
+    padding: 12px 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8; /* Light gray background */
+    background-color: #f8f8f8; 
     transition: border-color 0.3s, background-color 0.3s;
   }
   
-  /* Add focus styles for input fields */
+
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="password"]:focus,
   input[type="tel"]:focus,
   input[type="date"]:focus,
   input[type="file"]:focus {
-    border-color: #8EA7BA; /* Focus border color */
-    background-color: #ffffff; /* Focus background color */
+    border-color: #8EA7BA; 
+    background-color: #ffffff; 
   }
   
-  /* Button styling */
+
   .form-group  button {
     font-weight: bold;
-    width: 22%; /* Full width within the container */
-    background-color: #7E9AB1; /* Example primary color */
+    width: 22%; 
+    background-color: #7E9AB1; 
     color: white;
-    padding: 14px 20px; /* Adjust padding as needed */
+    padding: 14px 20px; 
     margin: 10px 0;
     border: none;
     border-radius: 4px;
@@ -70,10 +70,9 @@
   }
   
   .form-group button:hover {
-    background-color: #8EA7BA; /* Darker shade on hover */
+    background-color: #8EA7BA; 
   }
-  
-  /* Additional styling for file input and checkbox */
+
   input[type="file"] {
     border: none;
     padding-left: 0;
@@ -90,13 +89,11 @@
   }
   
   .agreement label {
-    display: inline; /* Keep the label on the same line as the checkbox */
-  }
+    display: inline;   }
   
-  /* Style adjustments for responsive design */
   @media (max-width: 600px) {
     .form-container {
-      padding: 15px; /* Smaller padding on small screens */
+      padding: 15px; 
     }
   }
   

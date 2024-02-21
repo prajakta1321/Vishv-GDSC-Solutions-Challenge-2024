@@ -1,20 +1,20 @@
 .image-container {
     position: absolute;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden; 
   }
   
   .image1 { 
     top: 20%;
     left: 15%;
-    width: 23em; /* Width of the container */
-    height: 30em; /* Height of the container */
+    width: 23em; 
+    height: 30em; 
   }
   
   .overlapping-image.image1 {
-    width: 100%; /* Scale the width to fill the container */
-    height: 100%; /* Scale the height to fill the container */
-    object-fit: contain; /* Maintain aspect ratio */
-    object-position: center; /* Center the image */
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    object-position: center; 
   }
   .image2 { 
     top: 13%;
@@ -31,14 +31,14 @@
   }
   
   .overlapping-image {
-    width: 100%; /* Make the image fill the container */
-    height: 100%; /* Adjust if you want to maintain aspect ratio */
-    object-fit: cover; /* This will cover the container with the image */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
   }
   .insights-container {
     height: 100vh;
     width: 100%;
-    background-image: url('../img/latest7.jpg'); /* Full background image */
+    background-image: url('../img/latest7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,13 +56,13 @@
     top: 16.5%;
     width: 50%;
     display: flex;
-    flex-direction: column; /* This will stack the carousel and buttons vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center; 
     position: relative;
-    justify-content: flex-start; /* Align items to the start of the container */
+    justify-content: flex-start; 
   }
   .carousel-container {
-    width: 100%; /* Set to take the full width of the right-side */
+    width: 100%; 
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
@@ -70,23 +70,23 @@
   }
   
   .carousel-card {
-    width: 23em; /* Card width */
-    height: 30em; /* Card height */
-    flex: 0 0 auto; /* Don't grow, don't shrink, maintain auto width based on content */
-    margin-right: 10px; /* Margin between cards */
-    /* ... other styles for carousel card ... */
+    width: 23em;
+    height: 30em;
+    flex: 0 0 auto; 
+    margin-right: 10px; 
+  
   }
   
   .btn-ctn {
-    width: 100%; /* Take the full width of the right-side container */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    margin-top: 20px; /* Space above the buttons */
+    justify-content: center; 
+    margin-top: 20px; 
   }
   
   .btn-ctn button {
     padding: 10px 20px;
-    margin: 0 10px; /* Space between buttons */
+    margin: 0 10px; 
     border-radius: 5px;
     background-color: #6E8EA7;
     color: white;

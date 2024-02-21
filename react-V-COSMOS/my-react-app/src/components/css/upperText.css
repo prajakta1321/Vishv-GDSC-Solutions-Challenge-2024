@@ -1,20 +1,20 @@
-/* This is the parent container that holds everything including the welcome-container */
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* This will take the full height of the viewport */
+  min-height: 100vh; 
   flex-direction: column;
 }
 
-/* Welcome container styles */
+
 .welcome-container {
   width: 50%;
   text-align: center;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
-  margin: 20px auto; /* 'auto' will center it horizontally */
+  margin: 20px auto; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #333;
 }
@@ -36,7 +36,7 @@
   margin-bottom: 0;
 }
 
-/* Tracker form styles */
+
 .tracker-form {
   width: 100%;
   max-width: 500px;
@@ -45,7 +45,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form group styles */
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -64,10 +64,10 @@
   margin-top: 5px;
 }
 
-/* Button styles */
+
 button {
   margin-top: 10px;
   margin-right: 5px;
 }
 
-/* If you have other elements you want to apply styles to, add them here */
+

@@ -4,71 +4,71 @@
 }
 
 .globe-container, .other-components {
-  flex: 1; /* Each child takes up equal space, but you can adjust this as needed */
+  flex: 1; 
 }
 
 .globe-container {
   width: 50%;
   height: 100%;
-  position: relative; /* This is important to position the map correctly */
+  position: relative; 
 }
 .other-components {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  flex-direction: column; /* Organize children vertically */
-  position: relative; /* Add this to position the buttons correctly */
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  position: relative; 
 }
-/* Add this CSS to your stylesheet without affecting other button styles */
+
 .zoom-india-button {
-  padding: 10px 20px; /* Add some padding */
-  margin: 10px; /* Add some margin */
-  font-size: 1em; /* Adjust font size */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  background-color: #007bff; /* Background color */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Add border-radius for rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  padding: 10px 20px; 
+  margin: 10px; 
+  font-size: 1em;
+  cursor: pointer; 
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
 }
 
 .zoom-india-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
 }
 
 .other-components .dropdown {
   padding: 0.5em 1em;
-  margin-bottom: 1em; /* Space between the dropdowns */
+  margin-bottom: 1em; 
   border-radius: 0.3em;
-  border: 1px solid #ddd; /* Subtle border */
+  border: 1px solid #ddd; 
   background-color: white;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-  font-size: 1rem; /* Responsive font size */
-  transition: all 0.3s; /* Smooth transition for all properties */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  font-size: 1rem;
+  transition: all 0.3s;
 }
 
 .other-components .dropdown:hover {
-  border-color: #aaa; /* Darker border on hover for better visibility */
+  border-color: #aaa; 
 }
 
-/* Style for the explore button within the .other-components class */
+
 .other-components .explore-button {
   padding: 0.5em 1em;
-  margin-top: 1em; /* Space above the button */
-  font-size: 1rem; /* Responsive font size */
+  margin-top: 1em; 
+  font-size: 1rem;
   cursor: pointer;
-  background-color: #007bff; /* Blue background */
-  color: white; /* White text */
+  background-color: #007bff; 
+  color: white; 
   border: none;
   border-radius: 0.3em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .other-components .explore-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lifted" effect */
+  background-color: #0056b3; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }

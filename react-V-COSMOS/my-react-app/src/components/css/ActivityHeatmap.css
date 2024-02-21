@@ -25,14 +25,14 @@
   padding: 5px 10px;
 }
 
-.year-change-buttons { /* Added styles for the year change buttons container */
+.year-change-buttons { 
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.year-change-buttons button { /* Added styles for the buttons */
+.year-change-buttons button { 
   padding: 5px 10px;
   margin: 0 5px;
   background-color: #4CAF50;
@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 
-.year-change-buttons button:hover { /* Style for hover state */
+.year-change-buttons button:hover { 
   background-color: #367c39;
 }
 
@@ -69,7 +69,7 @@
 
 .month {
   display: grid;
-  grid-template-columns: repeat(7, 15px); /* Reduced size of the grid columns */
+  grid-template-columns: repeat(7, 15px); 
   grid-gap: 2px;
   background: #444;
   padding: 2px;
@@ -78,8 +78,8 @@
 }
 
 .day {
-  width: 15px; /* Reduced width */
-  height: 15px; /* Reduced height */
+  width: 15px;
+  height: 15px;
   background-color: #767676;
   border-radius: 3px;
   opacity: 0.2;

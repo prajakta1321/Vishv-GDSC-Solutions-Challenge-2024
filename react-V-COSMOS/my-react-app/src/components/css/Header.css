@@ -180,7 +180,7 @@
     color: black; 
 }
 
-/* Common styles for both dropdowns */
+
 .color-dropdown {
     padding: 5px 10px;
     background-color: transparent;
@@ -189,58 +189,56 @@
     cursor: pointer;
     font-family: 'Roboto Slab', serif;
     font-size: 1em;
-    width: 200px; /* Fixed width to make the dropdown smaller */
+    width: 200px; 
     appearance: none;
 }
 
-/* Dropdown in the persistent header with white text */
+
 .persistent-header .color-dropdown {
     margin-left: 10px;
     padding: 5px 10px;
-    color: rgb(0, 0, 0); /* White text color for dropdown in persistent header */
+    color: rgb(0, 0, 0);
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Roboto Slab', serif;
     font-size: 1em;
-    width: 200px; /* Smaller width for the dropdown */
+    width: 200px; 
     background-color: transparent;
     appearance: none;
 }
 
-/* Dropdown in the video header with black text */
 .video-header .color-dropdown {
     color: rgb(255, 255, 255); 
 }
 
-/* Ensure options are always black text on white background */
 .color-dropdown option {
     background-color: white;
     color: black;
 }
 
-/* Removes the hover effect on the dropdown */
+
 .color-dropdown:focus, .color-dropdown:hover {
     outline: none;
     border: 1px solid rgb(255, 255, 255);
 }
 
-/* Specific styles for when the header has scrolled */
+
 .scrolled .color-dropdown {
-    color: rgb(255, 255, 255); /* Ensures text color is white when scrolled */
-    border-color: rgb(255, 255, 255); /* Optionally change border color on scroll */
+    color: rgb(255, 255, 255); 
+    border-color: rgb(255, 255, 255);
 }
 
 .video-header .header-buttons .color-dropdown {
     margin-left: 10px;
     padding: 5px 10px;
-    color: rgb(255, 255, 255); /* Black text color for dropdown in main header */
+    color: rgb(255, 255, 255); 
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Roboto Slab', serif;
     font-size: 1em;
-    width: 200px; /* Smaller width for the dropdown */
+    width: 200px; 
     background-color: transparent;
     appearance: none;
 }
@@ -250,14 +248,14 @@
 
 .monochrome {
     filter: grayscale();
-    background-color: #e6e6e6; /* Light gray background for monochromatism */
-    color: #000; /* Black text color for better contrast */
+    background-color: #e6e6e6;
+    color: #000; 
 }
 
-/* Styles for dichrome color perspective - Adjust the colors based on your design */
+
 .dichrome {
-    background-color: #f8d7da; /* Example: soft red background for dichromatism */
-    color: #721c24; /* Dark red text for better contrast */
+    background-color: #f8d7da; 
+    color: #721c24; 
     filter: hue-rotate(55deg);
 }
 

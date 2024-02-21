@@ -75,8 +75,8 @@
   }
   
 .card-container a{
-  color: inherit; /* Makes the link color the same as the surrounding text */
-  font-family: inherit; /* Ensures the font family is the same as the surrounding text */
+  color: inherit; 
+  font-family: inherit; 
   text-decoration: none; 
 
 }

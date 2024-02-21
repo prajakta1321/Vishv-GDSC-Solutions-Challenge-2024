@@ -42,11 +42,11 @@
   font-weight: bold;
   font-size: 115%;
   position: absolute;
-  top: 85%; /* Center vertically */
+  top: 85%; 
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 2px 2px 10px #000000;
-  color: white; /* Assuming you want white text */
+  color: white; 
   text-align: center;
   z-index: 2;
 }
